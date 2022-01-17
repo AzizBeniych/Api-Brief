@@ -178,6 +178,7 @@ body{
         border: #009760  ;
         background-color: #009760;
         width:  500px;
+        padding: 5px;
         margin-left: 30%;
         color: white;
         border-radius: 5px;
@@ -422,6 +423,20 @@ body{
             font-size: 10px;
             text-align: center;
             color: white;
+        }
+        #lengh{
+            margin-top: 5px;
+            
+            border: #009760  ;
+            background-color: #009760;
+            width:  250px;
+            margin-left: 50PX;
+            margin-top: 15px;
+            padding: 5px;
+            font-size: 10px;
+            color: white;
+            border-radius: 5px;
+    
         }
     }
 
