@@ -42,6 +42,8 @@
 
       <button id="btn">Search</button>
 
+      <h4 style="text-align: center;" id="lengh"></h4>
+
       <div id="data">
 
       </div>
@@ -53,7 +55,7 @@
               </div>
               <!-- <h1 style="position: absolute; margin-top: 1760px; color: transparent;">margin</h1> -->
 
-
+             
               <footer>
                 Copyright ©2022 World Langauge Company  W.L. All rights reserved.
               </footer>
@@ -66,7 +68,8 @@
         var btn = document.getElementById("btn")
         var inputSearch = document.getElementById("search");
         var results = document.getElementById('results');
-        var container = document.getElementById('container')
+        var container = document.getElementById('container');
+        // var lengh = document.getElementById("lengh");
 
 
         
@@ -86,6 +89,7 @@
                    
                     
                     document.getElementById('container').innerHTML += ("<li>" + response2[i].name.common + " " +  "Located in"  + " "  +  response2[i].continents + "</li>");
+                    document.getElementById("lengh").innerHTML = "The number of countries that speak " + inputSearch.value + " " + "is" + " " + response2.length;
                     
                   }             
                 } 
